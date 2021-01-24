@@ -12,7 +12,7 @@
 	<artifactId>dummyp1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>dummyp1</name>
-	<description>JenkinsDummy Project</description>
+	<description>JenkinsDummy Project1</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
