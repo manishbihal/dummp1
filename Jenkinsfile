@@ -25,7 +25,7 @@ node {
     stage('Package') {
         withMaven(jdk: 'jdk8', maven: 'm363') {
          //sh 'mvn package'
-          sh 'echo package
+          sh 'echo package'
         }
     }
     stage('Publish Artifact') {
