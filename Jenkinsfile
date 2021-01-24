@@ -5,23 +5,30 @@ node {
     }
     stage('Compile ') {
         withMaven(jdk: 'jdk8', maven: 'm363') {
-         sh 'mvn compile'
+         //sh 'mvn compile'
+           sh 'echo hello'
+           sleep 10
         }
     }
     stage('Unit Test') {
         withMaven(jdk: 'jdk8', maven: 'm363') {
-         sh 'mvn Test'
+         //sh 'mvn Test'
+           sh 'echo test'
+           sleep 10
         }
     }
     stage('Publish Test Result') {
-        junit '**/*.xml'
+        //junit '**/*.xml'
+        sh 'echo result'
+        sleep 5
     }
     stage('Package') {
         withMaven(jdk: 'jdk8', maven: 'm363') {
-         sh 'mvn package'
+         //sh 'mvn package'
+          sh 'echo package
         }
     }
     stage('Publish Artifact') {
-        archiveArtifacts artifacts: '**/*.jar', followSymlinks: false
+        //archiveArtifacts artifacts: '**/*.jar', followSymlinks: false
     }
 }
